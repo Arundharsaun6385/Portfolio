@@ -536,6 +536,7 @@ header.scrolled {
 .info-item {
   display: flex;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .info-label {
@@ -1585,7 +1586,11 @@ footer::before {
     clip-path: polygon(50% 50%, 50% 0, 66% 0, 50% 50%);
   }
 }
-
+@media (max-width:320px) {
+  .timeline-line {
+      height: 104%;
+  }
+}
 @media (max-width: 768px) {
   .hero-image {
     width: -webkit-fill-available;
@@ -1741,3 +1746,4 @@ footer::before {
     font-size: 16px;
   }
 }
+
